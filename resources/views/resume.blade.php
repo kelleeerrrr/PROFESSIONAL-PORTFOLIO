@@ -64,124 +64,83 @@
         <img src="{{ asset('profile.jpg') }}" alt="Profile Picture">
 
         {{-- Personal Information --}}
-        @if(!empty($resume->fullname) || !empty($resume->dob) || !empty($resume->pob) || !empty($resume->civil_status) || !empty($resume->specialization))
-            <h2>Personal Information</h2>
-            @if(!empty($resume->fullname)) <p><strong>Full Name:</strong> {{ $resume->fullname }}</p> @endif
-            @if(!empty($resume->dob)) <p><strong>Date of Birth:</strong> {{ $resume->dob }}</p> @endif
-            @if(!empty($resume->pob)) <p><strong>Place of Birth:</strong> {{ $resume->pob }}</p> @endif
-            @if(!empty($resume->civil_status)) <p><strong>Civil Status:</strong> {{ $resume->civil_status }}</p> @endif
-            @if(!empty($resume->specialization)) <p><strong>Field of Specialization:</strong> {{ $resume->specialization }}</p> @endif
-        @endif
+        <h2>Personal Information</h2>
+        <p><strong>Full Name:</strong> Irish Rivera</p>
+        <p><strong>Date of Birth:</strong> January 17, 2005</p>
+        <p><strong>Place of Birth:</strong> Tinga Itaas, Batangas City, Batangas</p>
+        <p><strong>Gender:</strong> Female</p>
+        <p><strong>Field of Specialization:</strong> Cloud Computing & Cyber Security</p>
 
         {{-- Organizations --}}
-        @if(!empty($resume->organization['name']))
-            <h2>Organization</h2>
-            @foreach($resume->organization['name'] as $i => $name)
-                @if($name)
-                    <p>{{ $name }} 
-                        @if(!empty($resume->organization['position'][$i])) - {{ $resume->organization['position'][$i] }} @endif
-                        @if(!empty($resume->organization['year'][$i])) ({{ $resume->organization['year'][$i] }}) @endif
-                    </p>
-                @endif
-            @endforeach
-        @endif
+        <h2>Organizations</h2>
+        <p>ACCESS - Member (2023-PRESENT)</p>
+        <p>JPCS - Member (2023-PRESENT)</p>
+        <p>KALINGA - Member (PRESENT)</p>
     </div>
 
     <div class="right">
         {{-- Buttons --}}
         <div style="position: absolute; top: 20px; right: 20px; display: flex; gap: 10px;">
             <button class="download-btn" onclick="window.print()">📄 Download My CV</button>
-            @if(session()->has('user_id'))
-                <a href="{{ route('resume.edit', ['id' => session('user_id')]) }}" class="edit-btn">✏️ Edit Resume</a>
-            @endif
         </div>
 
         {{-- Name and Contact --}}
-        @if(!empty($resume->fullname)) <h1>{{ strtoupper($resume->fullname) }}</h1> @endif
+        <h1>IRISH RIVERA</h1>
         <p>
-            @if(!empty($resume->address)) {{ $resume->address }}<br>@endif
-            @if(!empty($resume->email)) {{ $resume->email }}<br>@endif
-            @if(!empty($resume->phone)) {{ $resume->phone }}@endif
+            Tinga Itaas, Batangas City<br>
+            23-00679@g.batstae-u.edu.ph<br>
+            09362695155
         </p>
 
         {{-- Educational Background --}}
-        @php
-            $eduLevels = ['Elementary','Secondary','Tertiary'];
-            $education = $resume->education ?? [];
-        @endphp
-        @if(!empty($education))
-            <h2>Educational Background</h2>
-            @foreach($eduLevels as $level)
-                @php
-                    $school = $education[$level]['school'] ?? '';
-                    $year = $education[$level]['year'] ?? '';
-                @endphp
-                <p>
-                    <strong>{{ $level }}:</strong>
-                    @if(!$school && !$year)
-                        N/A
-                    @else
-                        {{ $school ?: '' }}{{ $year && $school ? ' (' . $year . ')' : '' }}
-                    @endif
-                </p>
-            @endforeach
-        @endif
+        <h2>Educational Background</h2>
+        <p><strong>Elementary:</strong> Tinga Itaas Elementary School (2011-2017)</p>
+        <p><strong>Junior High School</strong> Tinga Soro Soro Integrated School (2017-2021)</p>
+        <p><strong>Senior High School</strong> STI Batangas (2021-2023)</p>
+        <p><strong>Tertiary:</strong> Batangas State University - BS Computer Science (2017-2021)</p>
 
         {{-- Skills --}}
-        @if(!empty($resume->skills['key']))
-            <h2>Skills</h2>
-            <ul>
-                @foreach($resume->skills['key'] as $i => $skill)
-                    @php $desc = $resume->skills['value'][$i] ?? ''; @endphp
-                    @if($skill)
-                        <li><strong>{{ $skill }}:</strong> {{ $desc }}</li>
-                    @endif
-                @endforeach
-            </ul>
-        @endif
+        <h2>Skills</h2>
+        <ul>
+            <li><strong>Web Development:</strong> HTML, CSS, JavaScript, PHP, Laravel</li>
+            <li><strong>GUI Development:</strong> Python Tkinter, Flutter</li>
+            <li><strong>Automation & Robotics:</strong> Arduino, Sensors, OpenCV</li>
+            <li><strong>Database Management:</strong> MySQL, PostgreSQL, Firebase</li>
+        </ul>
 
         {{-- Programming Languages --}}
-        @if(!empty($resume->programming['key']))
-            <h2>Programming Languages</h2>
-            <ul>
-                @foreach($resume->programming['key'] as $i => $lang)
-                    @php $desc = $resume->programming['value'][$i] ?? ''; @endphp
-                    @if($lang)
-                        <li><strong>{{ $lang }}:</strong> {{ $desc }}</li>
-                    @endif
-                @endforeach
-            </ul>
-        @endif
+        <h2>Programming Languages</h2>
+        <ul>
+            <li><strong>Python:</strong> Scripting, GUI, OpenCV projects</li>
+            <li><strong>JavaScript:</strong> Frontend interactivity and dynamic content</li>
+            <li><strong>PHP & Laravel:</strong> Web backend development</li>
+            <li><strong>C/C++:</strong> Embedded systems and Arduino programming</li>
+            <li><strong>Dart:</strong> Flutter mobile apps</li>
+        </ul>
 
         {{-- Field of Interest --}}
-        @if(!empty($resume->interests))
-            <h2>Field of Interest</h2>
-            <ul>
-                @foreach($resume->interests as $interest)
-                    @if($interest) <li>{{ $interest }}</li> @endif
-                @endforeach
-            </ul>
-        @endif
+        <h2>Field of Interest</h2>
+        <ul>
+            <li>Smart Home Automation</li>
+            <li>IoT & Robotics</li>
+            <li>Web and Mobile Application Development</li>
+            <li>Data Visualization & Analytics</li>
+        </ul>
 
         {{-- Projects --}}
-        @if(!empty($resume->projects))
-            <h2>Projects</h2>
-            <ul>
-                @foreach($resume->projects as $project)
-                    @if($project) <li>{{ $project }}</li> @endif
-                @endforeach
-            </ul>
-        @endif
+        <h2>Projects</h2>
+        <ul>
+            <li>PRESENCE: People Recognition and Energy-Saving Control Engine</li>
+            <li>APAC: Arduino Pedestrian & Crosswalk Lights Automation</li>
+            <li>KapitBayan: Disaster Assistance Request & Mapping Syste</li>
+            <li>StudyMate+: Productivity & Study Management Mobile App</li>
+        </ul>
 
         {{-- Awards --}}
-        @if(!empty($resume->awards))
-            <h2>Awards and Recognitions</h2>
-            <ul>
-                @foreach($resume->awards as $award)
-                    @if($award) <li>{{ $award }}</li> @endif
-                @endforeach
-            </ul>
-        @endif
+        <h2>Awards and Recognitions</h2>
+        <ul>
+            <li>Batstateu, First Year, First Sem - Deans Lister  (2023)</li>
+        </ul>
     </div>
 </div>
 @endsection

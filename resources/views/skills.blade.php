@@ -11,6 +11,7 @@
     }
 
     h2.section-title {
+        margin-top: -27px;
         color: var(--accent);
         font-size: 2em;
         margin-bottom: 10px;
@@ -55,11 +56,13 @@
         color: white;
         position: relative;
         cursor: pointer;
-        width: 0; /* start from 0 for animation */
-        transition: width 1.5s ease-in-out;
+        width: 0;
+        transition: width 1.5s ease-in-out, transform 0.2s, box-shadow 0.2s;
     }
-
-    /* Tooltip on hover */
+    .skill-bar:hover {
+        transform: scaleX(1.02);
+        box-shadow: 0 0 8px rgba(255,31,132,0.6);
+    }
     .skill-bar::after {
         content: attr(data-percent);
         position: absolute;
@@ -75,14 +78,13 @@
         transition: 0.3s;
         pointer-events: none;
     }
-
     .skill-bar:hover::after { opacity: 1; }
 
-    /* Pink shades based on percentage */
-    .pink-25 { background-color: #ffb6c1; } /* 25% */
-    .pink-50 { background-color: #ff82a9; } /* 50% */
-    .pink-75 { background-color: #ff4f88; } /* 75% */
-    .pink-100 { background-color: #ff1f84; } /* 100% */
+    /* Pink shades */
+    .pink-25 { background-color: #ffb6c1; }
+    .pink-50 { background-color: #ff82a9; }
+    .pink-75 { background-color: #ff4f88; }
+    .pink-100 { background-color: #ff1f84; }
 
     /* Responsive */
     @media (max-width:768px){

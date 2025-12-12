@@ -6,7 +6,7 @@
 <style>
     .container {
         max-width: 1100px;
-        margin: 5px auto 15px auto;
+        margin: -30px auto -15px auto;
         background: #ffffff;
         padding: 35px 40px;
         border-radius: 14px;
@@ -36,7 +36,8 @@
     section h1 {
         font-size: 2.6em;
         color: var(--accent);
-        margin-bottom: 10px;
+        margin-top: -15px;
+        margin-bottom: 1px;
         font-weight: 700;
     }
 
@@ -53,8 +54,10 @@
     .tagline {
         font-style: italic;
         color: var(--accent);
-        margin-top: 10px;
+        margin-top: 12px;
         font-size: 1.05em;
+        text-align: center;
+        display: block;
     }
 
     .btn {
@@ -79,10 +82,12 @@
     }
 
     section img {
-        width: 280px;
+        width: 220px; /* Reduced size */
         border-radius: 50%;
         box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
         transition: 0.3s;
+        display: block;
+        margin: 0 auto;
     }
 
     body.dark section img {
@@ -104,7 +109,7 @@
     }
 
     .contact-section a {
-        color: #ff69b4; /* Pink color */
+        color: #ff69b4;
         text-decoration: none;
         font-weight: 500;
         transition: 0.3s;
@@ -141,8 +146,6 @@
                 <span style="color:var(--accent);">Cybersecurity Enthusiast</span>.
             </p>
 
-            <p class="tagline">“Designing with logic, coding with purpose.”</p>
-
             <div style="margin-top:20px;">
                 <a href="/projects" class="btn">View My Projects</a>
                 <a href="/resume" class="btn btn-alt">View My Resume</a>
@@ -155,10 +158,12 @@
             </div>
         </div>
 
-        <img src="{{ asset('keller.jpg') }}" alt="Profile Picture">
+        <div style="text-align:center;">
+            <img src="{{ asset('keller.jpg') }}" alt="Profile Picture">
+            <p class="tagline">“Turning complexity into clarity, one line at a time.”</p>
+        </div>
     </section>
 </div>
 
 <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 @endsection
-

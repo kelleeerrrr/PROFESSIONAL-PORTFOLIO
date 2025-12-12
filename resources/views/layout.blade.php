@@ -16,7 +16,6 @@
             --text-dark: #ffffff;
         }
 
-        /* 🌸 Base Layout */
         body {
             margin: 0;
             font-family: 'Poppins', sans-serif;
@@ -33,7 +32,7 @@
             color: var(--text-dark);
         }
 
-        /* 🌸 Top Navigation Bar */
+        /* 🌸 Navbar */
         .navbar {
             display: flex;
             justify-content: space-between;
@@ -46,7 +45,6 @@
             box-shadow: 0 3px 10px rgba(0,0,0,0.1);
         }
 
-        /* Logo */
         .navbar .logo {
             height: 50px;
             width: auto;
@@ -66,10 +64,8 @@
             padding: 6px 10px;
             border-radius: 6px;
             transition: 0.3s;
-            position: relative;
         }
 
-        /* 🌸 Hover & Active Link Feedback */
         .nav-links a:hover {
             background: rgba(255,255,255,0.2);
         }
@@ -83,7 +79,6 @@
             color: var(--accent-light);
         }
 
-        /* 🌸 Dark Mode Toggle */
         .dark-mode-toggle {
             background: none;
             border: none;
@@ -98,7 +93,6 @@
             transform: rotate(20deg);
         }
 
-        /* 🌸 Page Container */
         .page-container {
             max-width: 1100px;
             margin: 60px auto 40px auto;
@@ -111,7 +105,6 @@
             to { opacity: 1; transform: translateY(0); }
         }
 
-        /* 🌸 Reusable Button Styles */
         .btn, .back-btn {
             display: inline-block;
             padding: 10px 20px;
@@ -128,7 +121,6 @@
             transform: translateY(-2px);
         }
 
-        /* 🌸 Success Message Feedback */
         .success-banner {
             background: #2ecc71;
             color: white;
@@ -148,7 +140,6 @@
             to { transform: translateY(0); }
         }
 
-        /* 🌸 Footer */
         footer {
             text-align: center;
             padding: 15px;
@@ -162,7 +153,6 @@
             color: #ccc;
         }
 
-        /* 🌸 Print Handling */
         @media print {
             body {
                 background: white !important;
@@ -195,7 +185,6 @@
             <a href="/skills" class="{{ request()->is('skills') ? 'active' : '' }}">Skills</a>
             <a href="/resume" class="{{ request()->is('resume') ? 'active' : '' }}">Resume</a>
             <a href="/contact" class="{{ request()->is('contact') ? 'active' : '' }}">Contact</a>
-            <a href="/logout" class="btn" style="background:#6d6a6c;">Logout</a>
             <button class="dark-mode-toggle" id="themeToggle" title="Toggle Dark Mode">🌙</button>
         </div>
     </nav>
@@ -210,7 +199,7 @@
         © {{ date('Y') }} Irish Rivera • Designed with 💗 
     </footer>
 
-    {{-- 🌸 Script for Interactivity & Feedback --}}
+    {{-- 🌸 Script --}}
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             const banner = document.getElementById("successBanner");
@@ -219,7 +208,6 @@
             const toggle = document.getElementById('themeToggle');
             const body = document.body;
 
-            // Remember theme
             if (localStorage.getItem('theme') === 'dark') {
                 body.classList.add('dark');
                 toggle.textContent = '🌞';
