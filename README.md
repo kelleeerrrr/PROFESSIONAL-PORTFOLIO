@@ -1,61 +1,84 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Irish Rivera | Personal Portfolio
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Hi, I’m **Irish Rivera** 👋  
+Bachelor of Science in Computer Science at **Batangas State University**.  
+Aspiring **Cloud Engineer** & **Cybersecurity Enthusiast**.  
 
-## About Laravel
+> “Turning complexity into clarity, one line at a time.”
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+---
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## 📖 About Me
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+I’m passionate about technology, especially **Software Engineering**, **Web & Mobile Development**, and **Cybersecurity**.  
+I enjoy building intelligent solutions that improve productivity, safety, and user experiences.
 
-## Learning Laravel
+**Educational Background:**
+- **Tertiary:** Batangas State University – BS Computer Science (2023-Present)  
+- **Senior High School:** STI Batangas (2021-2023)  
+- **Junior High School:** Tinga Soro Soro Integrated School (2017-2021)  
+- **Elementary:** Tinga Itaas Elementary School (2011-2017)
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+**Organizations:**
+- ACCESS – Member (2023-Present)  
+- JPCS – Member (2023-Present)  
+- KALINGA – Member (Present)  
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+---
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## 💡 Skills & Tools
 
-## Laravel Sponsors
+**Soft Skills:**
+- 🤝 Teamwork  
+- 🎨 UI/UX Thinking  
+- ⚡ Adaptability  
+- 💬 Communication  
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+**Frontend:** HTML5, CSS3, JavaScript, React (Basics)  
+**Backend:** PHP (Laravel), Python, PostgreSQL  
+**Tools:** Git & GitHub, VS Code, Figma  
 
-### Premium Partners
+**Programming Languages:** Python, JavaScript, PHP & Laravel, C/C++, Dart (Flutter)  
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+**Field of Interest:** Smart Home Automation, IoT & Robotics, Web & Mobile App Development, Data Visualization & Analytics  
 
-## Contributing
+---
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## 🚀 Featured Projects
 
-## Code of Conduct
+### 1. **PRESENCE: Smart Appliance Controller**
+- **Description:** Automates home energy usage intelligently with presence detection using OpenCV.  
+- **Technologies:** Python, Tkinter, OpenCV, Matplotlib  
+- **GitHub:** [PRESENCE Project](https://github.com/kelleeerrrr/PRESENCE-PROJECT)
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+### 2. **APAC: Arduino Pedestrian & Crosswalk Lights**
+- **Description:** Smart traffic management system for pedestrian safety using Arduino and sensors.  
+- **Technologies:** Arduino UNO, LEDs, Push-button, Sensors, C/C++  
+- **GitHub:** [APAC Project](https://github.com/kelleeerrrr/OOP-Final-Project)
 
-## Security Vulnerabilities
+### 3. **KapitBayan: Disaster Assistance & Mapping**
+- **Description:** Web-based platform for disaster request coordination and real-time mapping.  
+- **Technologies:** PHP, Laravel, PostgreSQL, Leaflet.js, Firebase  
+- **GitHub:** [KapitBayan Project](https://github.com/paulalcaraz0/Final-Project-Web-System/tree/admin)
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+### 4. **StudyMate+: Productivity & Study Management App**
+- **Description:** Mobile app for planning and organizing study sessions.  
+- **Technologies:** Flutter, Firebase, Firestore, Dart  
+- **GitHub:** [StudyMate+](https://github.com/kelleeerrrr/STUDY-MATE)
 
-## License
+---
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## 🏆 Awards & Recognition
+- **BatStateU:** First Year, First Semester – Dean's Lister (2023)  
+
+---
+
+## 📫 Contact Me
+
+- 📧 Email: 23-00679@g.batstate-u.edu.ph  
+- 💼 LinkedIn: [irishrivera](https://www.linkedin.com/in/irishrivera)  
+- 🐙 GitHub: [kelleeerrrr](https://github.com/kelleeerrrr)  
+
+---
+
+*“Always learning, always building, always creating.”*  
