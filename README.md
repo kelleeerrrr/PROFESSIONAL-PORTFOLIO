@@ -1,4 +1,4 @@
-# Irish Rivera | Personal Portfolio
+# Irish Rivera | Professional Portfolio
 
 Hi, I’m **Irish Rivera** 👋  
 Bachelor of Science in Computer Science at **Batangas State University**.  
